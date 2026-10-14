@@ -9,7 +9,7 @@ El Brain **no es una IA nueva**: tu Claude piensa, EnsenIA guarda los datos y ej
 En Claude Code:
 
 ```bash
-claude plugin marketplace add <url-o-ruta-de-este-repo>
+claude plugin marketplace add sandronicolasm/ensenia-brain
 claude plugin install ensenia-brain@ensenia
 ```
 
