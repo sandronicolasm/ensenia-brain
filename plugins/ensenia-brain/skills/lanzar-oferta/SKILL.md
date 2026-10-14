@@ -32,6 +32,7 @@ El conector todavía no edita estas piezas: dale al dueño la configuración exa
 
 - **Order bump** — en `/admin/products/<id>` → pestaña *Upsells*, elegí qué se ofrece en el checkout de este producto; el diseño general en `/admin/upsell`. Proponé un complemento de **20 a 40 % del precio principal** que acelere el resultado (plantillas, checklist, bonus en video), con 15 a 30 % de descuento.
 - **Oferta post-venta** — en `/admin/upsell-post-venta`: el siguiente paso natural después de comprar (más profundidad, acompañamiento, el pack completo), a un precio especial que vence en 15 minutos. Con Stripe o Whop se cobra en un clic.
+- **Si la tienda es Pro, armala de varios pasos**: si rechaza la oferta, un downsell (una versión más chica o más barata: el ebook en vez del curso, el módulo suelto en vez del programa); si la acepta, lo que sigue. Hasta 3 ofertas por camino. En el editor: «Si rechaza → + Ofrecer otra cosa». Si el comprador ya tiene el producto de un paso, ese paso se saltea solo.
 - En los dos casos, los textos en todos los idiomas activos (sección *Idiomas* de cada editor, con «Traducir con IA»).
 
 ### 5. Cobro, legales y publicación
