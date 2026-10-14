@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "ensenia": {
+      "type": "http",
+      "url": "https://ensenia.online/mcp"
+    }
+  }
+}

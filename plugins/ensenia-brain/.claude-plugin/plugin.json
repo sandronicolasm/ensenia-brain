@@ -1,0 +1,11 @@
+{
+  "name": "ensenia-brain",
+  "version": "0.1.0",
+  "description": "El Brain de EnsenIA: lanzar ofertas, armar landings que convierten, producir creativos y cerrar el día con números, sobre tu tienda de EnsenIA.",
+  "author": {
+    "name": "EnsenIA",
+    "url": "https://ensenia.online"
+  },
+  "homepage": "https://ensenia.online/empezar-con-ia",
+  "keywords": ["ensenia", "infoproductos", "landing", "meta-ads", "lanzamiento"]
+}
