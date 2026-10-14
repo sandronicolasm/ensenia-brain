@@ -27,13 +27,10 @@ Seguí el estado de `iniciar`: te dice qué está hecho, qué sigue y quién lo 
 ### 3. Landing
 Usá la skill `landing-que-convierte`. No publiques la oferta sin `analizar_landing` limpio.
 
-### 4. Ticket promedio (se configura en el panel)
-El conector todavía no edita estas piezas: dale al dueño la configuración exacta y el link, y anotala en la sección «oferta» del brief.
-
-- **Order bump** — en `/admin/products/<id>` → pestaña *Upsells*, elegí qué se ofrece en el checkout de este producto; el diseño general en `/admin/upsell`. Proponé un complemento de **20 a 40 % del precio principal** que acelere el resultado (plantillas, checklist, bonus en video), con 15 a 30 % de descuento.
-- **Oferta post-venta** — en `/admin/upsell-post-venta`: el siguiente paso natural después de comprar (más profundidad, acompañamiento, el pack completo), a un precio especial que vence en 15 minutos. Con Stripe o Whop se cobra en un clic.
-- **Si la tienda es Pro, armala de varios pasos**: si rechaza la oferta, un downsell (una versión más chica o más barata: el ebook en vez del curso, el módulo suelto en vez del programa); si la acepta, lo que sigue. Hasta 3 ofertas por camino. En el editor: «Si rechaza → + Ofrecer otra cosa». Si el comprador ya tiene el producto de un paso, ese paso se saltea solo.
-- En los dos casos, los textos en todos los idiomas activos (sección *Idiomas* de cada editor, con «Traducir con IA»).
+### 4. Ticket promedio
+- **Oferta post-compra** (upsell, downsell, lo que sigue): usá la skill `embudo-post-compra`. Se arma y se guarda desde acá con `guardar_oferta_post_compra`.
+- **Order bump** (el conector todavía no lo edita): en `/admin/products/<id>` → pestaña *Upsells*, elegí qué se ofrece en el checkout de este producto; el diseño general en `/admin/upsell`. Proponé un complemento de **20 a 40 % del precio principal** que acelere el resultado (plantillas, checklist, bonus en video), con 15 a 30 % de descuento. Dale al dueño la configuración exacta y el link, y anotala en el brief.
+- Los textos en todos los idiomas activos: sección *Idiomas* de cada editor, con «Traducir con IA».
 
 ### 5. Cobro, legales y publicación
 Lo marca `iniciar` y lo hace el dueño desde el panel. Verificá con `analizar_tienda` que no quede ningún bloqueo de cobro o entrega antes de anunciar.
