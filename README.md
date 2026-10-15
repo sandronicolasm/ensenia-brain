@@ -23,7 +23,7 @@ claude mcp add --transport http ensenia https://ensenia.online/mcp --header "Aut
 
 Si ya tenés conectado EnsenIA en claude.ai (Conectores), no hace falta conectarlo dos veces: las skills usan las mismas herramientas.
 
-## Qué trae (v0.7)
+## Qué trae (v0.8)
 
 | Skill | Comando | Para qué |
 |---|---|---|
@@ -69,7 +69,7 @@ Ver [RUTINAS.md](RUTINAS.md): cierre diario, cazador de ceros, escalador, audito
 
 ## Hoja de ruta
 
-Ver `docs/SPEC_ENSENIA_BRAIN.md` en el repo de EnsenIA. Hechas: embudo post-compra de varios pasos, contadores del embudo y creativos, mercados, memoria estructurada con aprobación de acciones, varias tiendas por conexión y test A/B. Sigue: benchmarks de plataforma.
+Ver `docs/SPEC_ENSENIA_BRAIN.md` en el repo de EnsenIA. Hechas: embudo post-compra de varios pasos, contadores del embudo y creativos, mercados, memoria estructurada con aprobación de acciones, varias tiendas por conexión, test A/B y benchmarks de plataforma por rubro (`benchmarks`, `guardar_rubro`).
 
 ## Validar
 

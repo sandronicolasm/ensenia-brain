@@ -14,6 +14,7 @@ Corre sin el dueño mirando: no le preguntes nada. Lo que necesite su decisión 
 4. `ver_ofertas_post_compra`: tasa de cada paso.
 5. `rendimiento_de_creativos` con `dias: 7` y `dias: 14`.
 6. `acciones_pendientes`: qué se ejecutó en la semana, qué falló y qué se rechazó.
+7. `benchmarks`: dónde quedó la tienda contra su rubro. Una métrica que bajó de cuartil es un hallazgo; las metodologías traen los mismos percentiles en `benchmarksDelRubro`.
 
 Si una herramienta devuelve un error de límite (demasiadas llamadas), cortá la auditoría y decilo en el resumen: se retoma en la próxima, nunca en bucle.
 
