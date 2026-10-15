@@ -20,7 +20,7 @@ CPA objetivo: `oferta.cpaObjetivoUsd` del brief de cada producto (`ver_brief`). 
 Hasta **3**, ordenadas por plata. Cada una con: qué hacer · por qué (con los números de arriba) · riesgo (bajo, medio, alto) · quién la ejecuta.
 
 - Pausar un anuncio: riesgo bajo. Cambiar presupuesto: medio (nunca más de ±20 % por día). Cambiar precios: alto.
-- **Nada se ejecuta sin el «sí» del dueño.** Con Impulso o Pro, cada propuesta va con `proponer_accion` (le llega para aprobar en el panel; si el dueño le dio autonomía a ese tipo, dentro de los topes se aprueba sola). Lo de Meta lo ejecutás con su conector de Meta Ads **después** de aprobado y avisás con `registrar_resultado_accion`. En el plan Starter, proponé en el chat y esperá el «sí».
+- **Nada se ejecuta sin el «sí» del dueño.** Con el plan Pro, cada propuesta va con `proponer_accion` (le llega para aprobar en el panel; si el dueño le dio autonomía a ese tipo, dentro de los topes se aprueba sola). Lo de Meta lo ejecutás con su conector de Meta Ads **después** de aprobado y avisás con `registrar_resultado_accion`. En los otros planes, proponé en el chat y esperá el «sí».
 - Antes de proponer, `acciones_pendientes`: no dupliques lo que ya espera y no repitas lo rechazado sin un dato nuevo.
 - Antes de proponer, revisá las lecciones: si una aplica, citala; si tu propuesta va en contra de una, decilo.
 

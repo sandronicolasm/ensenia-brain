@@ -48,7 +48,7 @@ La memoria vive en EnsenIA y el dueño la ve en el panel (**Brain → Memoria**)
 - **Lecciones** con evidencia (`listar_lecciones`, `registrar_leccion`, `podar_lecciones`): n ≥ 30, se podan solas a los 60 días sin uso.
 - **Creativos** con código (`registrar_creativo`, `rendimiento_de_creativos`).
 
-Lo que mueve plata o tráfico se propone con `proponer_accion` y el dueño lo aprueba en **Brain → Por aprobar** (con aviso al celular). En **Brain → Autonomía** elige qué puede hacer el Brain solo y con qué topes. Las acciones de Meta las ejecuta tu IA con el conector oficial de Meta Ads después de aprobadas (`registrar_resultado_accion`). Desde el plan Impulso.
+Lo que mueve plata o tráfico se propone con `proponer_accion` y el dueño lo aprueba en **Brain → Por aprobar** (con aviso al celular). En **Brain → Autonomía** elige qué puede hacer el Brain solo y con qué topes. Las acciones de Meta las ejecuta tu IA con el conector oficial de Meta Ads después de aprobadas (`registrar_resultado_accion`). El panel y las acciones con aprobación son del plan Pro; el resto de las herramientas, en cualquier plan.
 
 Las tiendas que usaban la versión anterior tenían la memoria en documentos («Brief · …», «Brain · Lecciones»): el arranque los detecta y los pasa.
 
