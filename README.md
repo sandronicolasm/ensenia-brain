@@ -23,7 +23,7 @@ claude mcp add --transport http ensenia https://ensenia.online/mcp --header "Aut
 
 Si ya tenés conectado EnsenIA en claude.ai (Conectores), no hace falta conectarlo dos veces: las skills usan las mismas herramientas.
 
-## Qué trae (v0.4)
+## Qué trae (v0.5)
 
 | Skill | Comando | Para qué |
 |---|---|---|
@@ -32,13 +32,14 @@ Si ya tenés conectado EnsenIA en claude.ai (Conectores), no hace falta conectar
 | `landing-que-convierte` | `/landing` | Landing por bloques desde el brief, auditada, en cualquier idioma activo. |
 | `creativos` | `/creativos` (la skill misma) | Ángulos, guiones, anuncios de imagen, códigos `CR-0001` y veredicto de ganadores. |
 | `embudo-post-compra` | `/embudo` | Upsell, downsell y lo que sigue después de pagar: arma el flujo, lo guarda en la tienda y mide la tasa de cada paso. |
+| `replicar-mercado` | `/replicar` | Lleva una oferta validada a otro país o idioma: crea el mercado, traduce la tienda por bloques, completa el checklist y la sale a testear con métricas separadas (plan Pro). |
 | `cierre-diario` | `/cierre` | Números del día, alertas con reglas fijas y hasta 3 acciones propuestas. |
 
 El método de marketing (investigación, avatar, oferta, landing, campañas…) vive en el servidor de EnsenIA y se pide con la herramienta `metodologia`: se actualiza sin reinstalar el plugin.
 
 ## Memoria
 
-Los creativos y el embudo ya viven en EnsenIA (`registrar_creativo`, `rendimiento_de_creativos`, `embudo_del_producto`, `tablero_del_dia`, `alertas`).
+Los creativos, el embudo y los mercados ya viven en EnsenIA (`registrar_creativo`, `rendimiento_de_creativos`, `embudo_del_producto`, `tablero_del_dia`, `alertas`, `listar_mercados`, `estado_de_replicacion`).
 
 Hasta que EnsenIA tenga tablas propias para el Brain, la memoria vive en los **documentos de estrategia** de la tienda (se ven en el panel):
 
