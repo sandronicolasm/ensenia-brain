@@ -10,7 +10,7 @@ Si en esta conversación no corrió `brain-arranque`, corrélo primero. Sin brie
 ## 1. Ángulos antes que piezas
 1. `metodologia` → `angulos_y_voz` (con el `mercado`).
 2. Del brief y del registro de creativos (abajo), armá el banco de ángulos: dolor, deseo, objeción, mecanismo, prueba, identidad. Para cada uno, 2 o 3 hooks en el lenguaje literal del mercado.
-3. Revisá las lecciones del área `creativos` y `rendimiento_de_creativos` (qué ya ganó o perdió). No repitas un ángulo perdedor sin cambiarle algo y decirlo.
+3. Revisá `listar_lecciones` con `area: creativos` y `rendimiento_de_creativos` (qué ya ganó o perdió). No repitas un ángulo perdedor sin cambiarle algo y decirlo.
 4. Proponé al dueño **3 a 5 ángulos** para esta tanda, con el porqué. Esperá el «sí».
 
 ## 2. Producir

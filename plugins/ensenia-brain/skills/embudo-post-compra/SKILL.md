@@ -10,7 +10,7 @@ Es la pieza que más sube el ticket: después de pagar el comprador ya confió, 
 ## 1. Leer
 1. `ver_ofertas_post_compra` → ofertas actuales, cada paso con producto, precios (normal y de oferta en USD y ARS), minutos, textos, ramas y **resultados** (mostradas, aceptadas, tasa). También qué permite el plan (`plan.variosPasos`) y si la tienda cobra en un clic (`cobroEnUnClic`).
 2. `metodologia` → `ofertas_post_compra`: cómo se diseña cada paso, rangos de precio y tasas de referencia.
-3. Brief del producto que dispara la oferta y lecciones del área `post-venta`.
+3. `ver_brief` del producto que dispara la oferta y `listar_lecciones` con `area: post-venta`.
 4. `listar_productos` o la lista `productos` que trae `ver_ofertas_post_compra`: sólo se puede ofrecer lo que ya existe en la tienda. Si falta el producto ideal (un downsell más chico, un complemento), proponé crearlo con `lanzar-oferta` antes.
 
 ## 2. Diagnosticar (si ya hay ofertas)

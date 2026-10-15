@@ -23,7 +23,7 @@ claude mcp add --transport http ensenia https://ensenia.online/mcp --header "Aut
 
 Si ya tenés conectado EnsenIA en claude.ai (Conectores), no hace falta conectarlo dos veces: las skills usan las mismas herramientas.
 
-## Qué trae (v0.5)
+## Qué trae (v0.6)
 
 | Skill | Comando | Para qué |
 |---|---|---|
@@ -33,18 +33,27 @@ Si ya tenés conectado EnsenIA en claude.ai (Conectores), no hace falta conectar
 | `creativos` | `/creativos` (la skill misma) | Ángulos, guiones, anuncios de imagen, códigos `CR-0001` y veredicto de ganadores. |
 | `embudo-post-compra` | `/embudo` | Upsell, downsell y lo que sigue después de pagar: arma el flujo, lo guarda en la tienda y mide la tasa de cada paso. |
 | `replicar-mercado` | `/replicar` | Lleva una oferta validada a otro país o idioma: crea el mercado, traduce la tienda por bloques, completa el checklist y la sale a testear con métricas separadas (plan Pro). |
+| `auditoria-nocturna` | `/auditoria` | Compara la semana con la memoria, da veredicto a los creativos, registra y poda lecciones y deja acciones para aprobar. |
+| `escalar-campanas` | `/escalar` | Escalar, sostener o recortar campañas con reglas fijas sobre ROAS y CPA reales; cada cambio de presupuesto, como acción. |
 | `cierre-diario` | `/cierre` | Números del día, alertas con reglas fijas y hasta 3 acciones propuestas. |
 
 El método de marketing (investigación, avatar, oferta, landing, campañas…) vive en el servidor de EnsenIA y se pide con la herramienta `metodologia`: se actualiza sin reinstalar el plugin.
 
-## Memoria
+## Memoria y aprobación
 
-Los creativos, el embudo y los mercados ya viven en EnsenIA (`registrar_creativo`, `rendimiento_de_creativos`, `embudo_del_producto`, `tablero_del_dia`, `alertas`, `listar_mercados`, `estado_de_replicacion`).
+La memoria vive en EnsenIA y el dueño la ve en el panel (**Brain → Memoria**):
 
-Hasta que EnsenIA tenga tablas propias para el Brain, la memoria vive en los **documentos de estrategia** de la tienda (se ven en el panel):
+- **Brief** de cada oferta (`ver_brief`, `guardar_brief`): la fuente de verdad para landing, creativos y ofertas.
+- **Lecciones** con evidencia (`listar_lecciones`, `registrar_leccion`, `podar_lecciones`): n ≥ 30, se podan solas a los 60 días sin uso.
+- **Creativos** con código (`registrar_creativo`, `rendimiento_de_creativos`).
 
-- `Brief · <producto>` (tipo `oferta`): la fuente de verdad de cada oferta.
-- `Brain · Lecciones` (tipo `otro`): lo aprendido con números (n ≥ 30), máximo 30.
+Lo que mueve plata o tráfico se propone con `proponer_accion` y el dueño lo aprueba en **Brain → Por aprobar** (con aviso al celular). En **Brain → Autonomía** elige qué puede hacer el Brain solo y con qué topes. Las acciones de Meta las ejecuta tu IA con el conector oficial de Meta Ads después de aprobadas (`registrar_resultado_accion`). Desde el plan Impulso.
+
+Las tiendas que usaban la versión anterior tenían la memoria en documentos («Brief · …», «Brain · Lecciones»): el arranque los detecta y los pasa.
+
+## Rutinas
+
+Ver [RUTINAS.md](RUTINAS.md): cierre diario, cazador de ceros, escalador, auditoría nocturna y guardián de cobro como tareas programadas.
 
 ## Reglas
 
@@ -55,7 +64,7 @@ Hasta que EnsenIA tenga tablas propias para el Brain, la memoria vive en los **d
 
 ## Hoja de ruta
 
-Ver `docs/SPEC_ENSENIA_BRAIN.md` en el repo de EnsenIA. Esta es la Fase 0 (plugin sobre las herramientas que ya existen). Las siguientes suman datos y herramientas en EnsenIA: embudo post-compra de varios pasos, contadores del embudo, mercados, memoria estructurada con aprobación de acciones, varias tiendas por conexión y benchmarks de plataforma.
+Ver `docs/SPEC_ENSENIA_BRAIN.md` en el repo de EnsenIA. Hechas: embudo post-compra de varios pasos, contadores del embudo y creativos, mercados, memoria estructurada con aprobación de acciones. Siguen: varias tiendas por conexión con test A/B por MCP, y benchmarks de plataforma.
 
 ## Validar
 

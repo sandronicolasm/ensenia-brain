@@ -8,7 +8,7 @@ description: Arma, revisa o mejora la landing de venta de un producto de EnsenIA
 Si en esta conversación no corrió `brain-arranque`, corrélo primero.
 
 ## 1. Juntar la base
-1. Brief del producto (`Brief · <producto>` en `listar_documentos` → `ver_documento`). **Sin brief no se escribe una landing**: si falta, armalo primero (secciones en `brain-arranque`).
+1. Brief del producto (`ver_brief`). **Sin brief no se escribe una landing**: si falta, armalo primero (secciones en `brain-arranque`).
 2. `metodologia` → `landing` (con el `mercado` del idioma que vas a escribir).
 3. `guia_de_bloques` → formato exacto de cada bloque, reglas de CTAs y links, variables de precio, kit de diseño.
 4. `ver_producto` → precios y `botonesDeCompra` (si tiene pack, un botón por versión).

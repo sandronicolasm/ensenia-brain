@@ -15,7 +15,7 @@ Seguí el estado de `iniciar`: te dice qué está hecho, qué sigue y quién lo 
 
 ### 1. Brief (antes de producir nada)
 1. `metodologia` → `investigacion`, después `avatar`, después `oferta` (con `mercado`: `argentina`, `latam` o `ingles`).
-2. Con lo que salga, armá el brief con las secciones de `brain-arranque` y guardalo con `guardar_documento` (`tipo: oferta`, título `Brief · <producto>`). Si el producto todavía no existe, guardalo sin producto y asocialo cuando lo crees (mismo `documento_id`).
+2. Con lo que salga, armá el brief con las secciones de `brain-arranque` y guardalo con `guardar_brief`. Si el producto todavía no existe, guardalo sin producto y asocialo cuando lo crees (mismo `documento_id`).
 3. Mostrá al dueño la promesa, el precio y los bonus. No sigas sin su «sí».
 
 ### 2. Producto y entregables

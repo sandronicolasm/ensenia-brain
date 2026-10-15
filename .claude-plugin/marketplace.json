@@ -12,7 +12,7 @@
       "name": "ensenia-brain",
       "source": "./plugins/ensenia-brain",
       "description": "El Brain de EnsenIA: lanzar ofertas, armar landings que convierten, producir creativos y cerrar el día con números, sobre tu tienda de EnsenIA.",
-      "version": "0.5.0"
+      "version": "0.6.0"
     }
   ]
 }

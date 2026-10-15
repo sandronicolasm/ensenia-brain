@@ -42,7 +42,7 @@ Seguí hasta `listo: true`.
 ## 5. Salir a testear
 1. `actualizar_mercado` → `testeando`.
 2. Creativos con la skill `creativos`: partí de los ganadores del origen, traducidos y adaptados, cada uno con su código nuevo. Los perdedores no se replican.
-3. Dejá anotado en `Brief · <producto>` el mercado nuevo, la fecha y el CPA objetivo.
+3. Sumá el mercado nuevo a `mercados` del brief (`guardar_brief`) y, si cambia, el CPA objetivo.
 
 ## 6. Decidir
 A los 7 días, con `listar_mercados` y `tablero_del_dia` (cada mercado en su zona horaria):
