@@ -23,7 +23,7 @@ claude mcp add --transport http ensenia https://ensenia.online/mcp --header "Aut
 
 Si ya tenés conectado EnsenIA en claude.ai (Conectores), no hace falta conectarlo dos veces: las skills usan las mismas herramientas.
 
-## Qué trae (v0.6)
+## Qué trae (v0.7)
 
 | Skill | Comando | Para qué |
 |---|---|---|
@@ -35,6 +35,7 @@ Si ya tenés conectado EnsenIA en claude.ai (Conectores), no hace falta conectar
 | `replicar-mercado` | `/replicar` | Lleva una oferta validada a otro país o idioma: crea el mercado, traduce la tienda por bloques, completa el checklist y la sale a testear con métricas separadas (plan Pro). |
 | `auditoria-nocturna` | `/auditoria` | Compara la semana con la memoria, da veredicto a los creativos, registra y poda lecciones y deja acciones para aprobar. |
 | `escalar-campanas` | `/escalar` | Escalar, sostener o recortar campañas con reglas fijas sobre ROAS y CPA reales; cada cambio de presupuesto, como acción. |
+| `test-ab` | `/testab` | Test A/B de una landing: un cambio por vez, reparto, resultado con la significancia que calcula EnsenIA y cierre con la ganadora. |
 | `cierre-diario` | `/cierre` | Números del día, alertas con reglas fijas y hasta 3 acciones propuestas. |
 
 El método de marketing (investigación, avatar, oferta, landing, campañas…) vive en el servidor de EnsenIA y se pide con la herramienta `metodologia`: se actualiza sin reinstalar el plugin.
@@ -51,6 +52,10 @@ Lo que mueve plata o tráfico se propone con `proponer_accion` y el dueño lo ap
 
 Las tiendas que usaban la versión anterior tenían la memoria en documentos («Brief · …», «Brain · Lecciones»): el arranque los detecta y los pasa.
 
+## Varias tiendas
+
+Una sola conexión puede trabajar en varias tiendas: al conectar, tildá las otras en «También puede trabajar en» (o después, en el panel de la tienda principal: Configuración → Conector de IA → Tiendas). El Brain arranca con `listar_tiendas` y pasa `tienda` en cada herramienta. Las rutinas pueden recorrer todas: «hacé el cierre de cada tienda de listar_tiendas».
+
 ## Rutinas
 
 Ver [RUTINAS.md](RUTINAS.md): cierre diario, cazador de ceros, escalador, auditoría nocturna y guardián de cobro como tareas programadas.
@@ -64,7 +69,7 @@ Ver [RUTINAS.md](RUTINAS.md): cierre diario, cazador de ceros, escalador, audito
 
 ## Hoja de ruta
 
-Ver `docs/SPEC_ENSENIA_BRAIN.md` en el repo de EnsenIA. Hechas: embudo post-compra de varios pasos, contadores del embudo y creativos, mercados, memoria estructurada con aprobación de acciones. Siguen: varias tiendas por conexión con test A/B por MCP, y benchmarks de plataforma.
+Ver `docs/SPEC_ENSENIA_BRAIN.md` en el repo de EnsenIA. Hechas: embudo post-compra de varios pasos, contadores del embudo y creativos, mercados, memoria estructurada con aprobación de acciones, varias tiendas por conexión y test A/B. Sigue: benchmarks de plataforma.
 
 ## Validar
 
