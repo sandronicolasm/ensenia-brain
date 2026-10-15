@@ -8,23 +8,13 @@ description: Cierre del día de una tienda de EnsenIA — ventas, ingresos, gast
 Si en esta conversación no corrió `brain-arranque`, alcanza con leer `ver_tienda` y el documento `Brain · Lecciones`.
 
 ## 1. Números
-1. `estadisticas` con `dias: 1` (hoy, en la zona horaria de la tienda) y con `dias: 7` (los últimos 7 días, hoy incluido).
-2. Promedio diario = total de 7 días / 7. Compará hoy contra ese promedio. El cierre está pensado para el final del día: si se corre antes, hoy está incompleto; decilo y compará la hora contra la proporción del día que pasó.
-3. Calculá y mostrá: ventas, ingresos, ticket promedio (ingresos / ventas), conversión, gasto, ROAS (ingresos / gasto) y CPA (gasto / ventas). Si la tienda no conectó su cuenta publicitaria, no hay gasto: decilo y seguí sin ROAS ni CPA.
-4. Si el dueño tiene el conector oficial de Meta Ads, sumá de ahí el gasto y los resultados por anuncio del día; si no, usá lo que trae `estadisticas` → campañas.
+1. `tablero_del_dia` → hoy contra el promedio diario de 7 días: ventas, ingresos, ticket, gasto, ROAS, CPA, ganancia, visitas, conversión, order bump y oferta post-compra. `parteDelDia` dice cuánto del día pasó: si el cierre corre antes de que termine, comparalo con esa proporción y decilo. Las ventas en otra moneda vienen aparte (`ventasHoyEnOtrasMonedas`).
+2. Si el dueño tiene el conector oficial de Meta Ads, sumá de ahí lo que haga falta por anuncio; si no, alcanza con lo que trae EnsenIA (`rendimiento_de_creativos` por creativo, `estadisticas` → campañas).
 
-CPA objetivo: el del brief de cada producto (sección oferta). Si no está, tomá como referencia el 40 % del precio del producto y anotalo como «a definir con el dueño».
+CPA objetivo: el del brief de cada producto (sección oferta). Si no está, el de la herramienta (40 % del ticket de 30 días) y anotalo como «a definir con el dueño».
 
-## 2. Alertas (reglas fijas, en este orden)
-| Alerta | Regla |
-|---|---|
-| 🔴 No se puede vender | `analizar_tienda` marca un bloqueo de cobro, entrega o publicación |
-| 🔴 Anuncio que quema plata | gasto del día ≥ 1,5 × CPA objetivo y 0 ventas atribuidas |
-| 🟠 Caída de conversión | conversión de hoy < 70 % del promedio de 7 días, con ≥ 100 visitas hoy |
-| 🟠 Caída de ventas | ventas de hoy < 50 % del promedio diario de 7 días, con promedio ≥ 4 |
-| 🟢 Para escalar | ROAS ≥ objetivo 3 días seguidos (mirá `dias: 3` si hace falta) |
-
-Sin alertas, se dice «sin alertas» y no se inventan problemas.
+## 2. Alertas
+`alertas` (con `cpa_objetivo` si el brief lo tiene) devuelve las reglas fijas ya evaluadas, de lo más urgente a lo menos: lo que impide vender, anuncios que gastaron 1,5 veces el CPA objetivo sin ventas, caídas de conversión o de ventas (ajustadas a la hora), Meta sin sincronizar, reclamos, dominio, order bumps flojos y lo que conviene escalar. Sin alertas, se dice «sin alertas» y no se inventan problemas.
 
 ## 3. Acciones
 Hasta **3**, ordenadas por plata. Cada una con: qué hacer · por qué (con los números de arriba) · riesgo (bajo, medio, alto) · quién la ejecuta.
@@ -49,5 +39,5 @@ Para mañana
 
 ## 5. Aprender
 - Si hoy cerró una prueba o un cambio con n ≥ 30 ventas o conversiones detrás y un resultado claro, registralo como lección en `Brain · Lecciones` (formato en `brain-arranque`), con la evidencia.
-- Si un creativo cambió de estado, actualizá su registro (skill `creativos`).
+- Si un creativo cambió de estado, actualizalo con `actualizar_creativo` (skill `creativos`).
 - Si no hay nada con evidencia suficiente, no se registra nada.

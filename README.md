@@ -23,7 +23,7 @@ claude mcp add --transport http ensenia https://ensenia.online/mcp --header "Aut
 
 Si ya tenés conectado EnsenIA en claude.ai (Conectores), no hace falta conectarlo dos veces: las skills usan las mismas herramientas.
 
-## Qué trae (v0.3)
+## Qué trae (v0.4)
 
 | Skill | Comando | Para qué |
 |---|---|---|
@@ -38,11 +38,12 @@ El método de marketing (investigación, avatar, oferta, landing, campañas…) 
 
 ## Memoria
 
+Los creativos y el embudo ya viven en EnsenIA (`registrar_creativo`, `rendimiento_de_creativos`, `embudo_del_producto`, `tablero_del_dia`, `alertas`).
+
 Hasta que EnsenIA tenga tablas propias para el Brain, la memoria vive en los **documentos de estrategia** de la tienda (se ven en el panel):
 
 - `Brief · <producto>` (tipo `oferta`): la fuente de verdad de cada oferta.
 - `Brain · Lecciones` (tipo `otro`): lo aprendido con números (n ≥ 30), máximo 30.
-- `Creativos · <producto>` (tipo `brief_creativo`): registro de piezas con código y estado.
 
 ## Reglas
 
