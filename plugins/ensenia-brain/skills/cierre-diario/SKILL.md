@@ -9,7 +9,8 @@ Si en esta conversación no corrió `brain-arranque`, alcanza con leer `ver_tien
 
 ## 1. Números
 1. `tablero_del_dia` → hoy contra el promedio diario de 7 días: ventas, ingresos, ticket, gasto, ROAS, CPA, ganancia, visitas, conversión, order bump y oferta post-compra. `parteDelDia` dice cuánto del día pasó: si el cierre corre antes de que termine, comparalo con esa proporción y decilo. Las ventas en otra moneda vienen aparte (`ventasHoyEnOtrasMonedas`). Con mercados, `mercados` trae lo mismo por mercado (cada uno en su zona horaria y con el gasto de su cuenta): reportá cada uno en su línea y no mezcles un mercado que escala con uno que testea.
-2. Si el dueño tiene el conector oficial de Meta Ads, sumá de ahí lo que haga falta por anuncio; si no, alcanza con lo que trae EnsenIA (`rendimiento_de_creativos` por creativo, `estadisticas` → campañas).
+2. `diagnostico_de_campanas` (últimos 7 días completos) → ¿es rentable?, el primer cuello de botella (CPM, landing, tráfico o pago) y el punto de mejora de cada anuncio con gasto. Es lo que ordena las acciones: se trabaja el primer tramo que falla, no el que más se ve.
+3. Si el dueño tiene el conector oficial de Meta Ads, sumá de ahí lo que haga falta por anuncio; si no, alcanza con lo que trae EnsenIA (`rendimiento_de_creativos` por creativo, `estadisticas` → campañas).
 
 CPA objetivo: `oferta.cpaObjetivoUsd` del brief de cada producto (`ver_brief`). Si no está, el de la herramienta (40 % del ticket de 30 días) y anotalo como «a definir con el dueño».
 

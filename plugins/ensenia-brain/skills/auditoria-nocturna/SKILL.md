@@ -8,7 +8,7 @@ description: Auditoría nocturna de una tienda de EnsenIA — compara los númer
 Corre sin el dueño mirando: no le preguntes nada. Lo que necesite su decisión queda como acción propuesta (`proponer_accion`) o en el resumen final. Si en esta conversación no corrió `brain-arranque`, leé al menos `ver_tienda`, `ver_brief`, `listar_lecciones` y `acciones_pendientes`.
 
 ## 1. Datos (sólo de EnsenIA: no le pidas a Meta en cada pasada)
-1. `tablero_del_dia` y `alertas` (con el CPA objetivo del brief, en la moneda de la tienda).
+1. `tablero_del_dia`, `alertas` (con el CPA objetivo del brief, en la moneda de la tienda) y `diagnostico_de_campanas` (7 días completos): veredicto de rentabilidad, cuello de botella y punto de mejora de cada anuncio.
 2. `estadisticas` con `dias: 7` y `dias: 30`; `listar_mercados` con `dias: 7` si hay mercados.
 3. `embudo_del_producto` (7 y 30 días): conversión por paso y tasa de cada order bump.
 4. `ver_ofertas_post_compra`: tasa de cada paso.

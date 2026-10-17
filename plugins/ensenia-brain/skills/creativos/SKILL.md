@@ -28,7 +28,15 @@ Con el código al principio del nombre:
 
 Estados: `producido` → `auditado` (revisado contra el brief y las reglas) → `al_aire` → `ganador` / `perdedor` → `archivado`. Se cambian con `actualizar_creativo`.
 
-## 4. Veredicto
+## 4. Diagnóstico de cada pieza
+`rendimiento_de_creativos` trae, por creativo, las métricas del anuncio y su punto de mejora. Se leen en orden y se arregla el primero que falla:
+- **Video:** gancho (3 s / impresiones, 25 % o más) → retención (ThruPlay / impresiones, 10 % o más) → CTR único (1,5 % o más) → calidad de clics (visitas a la landing / clics, 80 % o más) → CPM (2 a 10 USD).
+- **Imagen:** CTR único → calidad de clics → CPM.
+- Gancho flojo: se rehace el arranque (los primeros 3 segundos), no el video entero. Retención floja: se acorta y se adelanta el beneficio. CTR único flojo: propuesta de valor y llamado a la acción. Calidad de clics floja: casi siempre es técnico (página lenta, caída o link roto): avisá al dueño antes de tocar el anuncio.
+- Con menos de 1.000 impresiones o 30 clics no hay conclusión.
+- La variante que corrige un punto de mejora es un creativo nuevo (`registrar_creativo`, con el ángulo y qué cambió).
+
+## 5. Veredicto
 Con `rendimiento_de_creativos` (al menos 7 días al aire; gasto de Meta contra ventas reales de la tienda):
 - **Ganador**: CPA por debajo del objetivo y con ventas suficientes para no ser casualidad.
 - **Perdedor**: gastó 1,5 veces el CPA objetivo sin ventas, o CPA el doble del objetivo con al menos 3 días al aire.

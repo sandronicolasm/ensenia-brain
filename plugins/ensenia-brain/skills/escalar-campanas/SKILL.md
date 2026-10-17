@@ -8,6 +8,7 @@ description: Decide qué campañas o conjuntos de Meta escalar, sostener o recor
 Si en esta conversación no corrió `brain-arranque`, leé `ver_brief` (CPA objetivo) y `listar_lecciones` con `area: campanas`.
 
 ## 1. Datos
+- `diagnostico_de_campanas` → si la cuenta no es rentable, **no se escala nada**: primero se arregla el cuello de botella que marca (CPM, landing, tráfico o pago). Tampoco se escala un anuncio con la calidad de clics por debajo del 80 % (la plata se va en clics que no llegan a la página).
 - `estadisticas` con `dias: 3` y `dias: 7` → campañas y conjuntos con gasto, ventas reales, ROAS y CPA (ventas de EnsenIA atribuidas por UTM, no las que reporta Meta).
 - `listar_mercados`: cada mercado con su cuenta publicitaria y su CPA.
 - `acciones_pendientes` → la autonomía de `ajustar_presupuesto` (nivel y tope de % por vez) y lo que ya se cambió en los últimos días.
