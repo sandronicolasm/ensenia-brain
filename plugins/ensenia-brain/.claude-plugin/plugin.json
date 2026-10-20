@@ -7,5 +7,14 @@
     "url": "https://ensenia.online"
   },
   "homepage": "https://ensenia.online/empezar-con-ia",
-  "keywords": ["ensenia", "infoproductos", "landing", "meta-ads", "lanzamiento"]
+  "keywords": [
+    "ensenia",
+    "infoproductos",
+    "landing",
+    "meta-ads",
+    "lanzamiento"
+  ],
+  "license": "LicenseRef-EnsenIA",
+  "icon": ".claude-plugin/icon.png",
+  "privacyPolicyUrl": "https://ensenia.online/politica-de-privacidad"
 }
