@@ -34,6 +34,9 @@ Orden que convierte: hero → problema → antes y después → beneficios → q
 3. Pasale al dueño la URL para que la mire en el celular.
 4. Si algo salió mal: `listar_versiones` + `restaurar_version`.
 
+## Formato quiz
+Si el tráfico es frío o el producto tiene perfiles distintos, la landing puede ser un quiz (desde Impulso): usá la skill `quiz-de-venta`. Si `ver_landing` trae `format: "quiz"`, lo que ve el visitante es el quiz, no los bloques.
+
 ## Otro idioma
 - Cada idioma activo tiene su landing (`idioma` en `ver_landing` / `guardar_landing`). No es una traducción literal: adaptá ejemplos, modismos y objeciones a ese mercado (`metodologia` con el `mercado` correspondiente).
 - Si el idioma no está activo en la tienda, el dueño lo activa en Configuración → Preferencias → Idiomas.
