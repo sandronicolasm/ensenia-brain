@@ -4,6 +4,8 @@ Plugin de Claude para operar tiendas de [EnsenIA](https://ensenia.online): lanza
 
 El Brain **no es una IA nueva**: tu Claude piensa, EnsenIA guarda los datos y ejecuta por su conector (MCP). La IA la pagás con tu cuenta de Claude; EnsenIA no llama a ningún modelo.
 
+> **In English.** EnsenIA Brain turns Claude into the operator of an [EnsenIA](https://ensenia.online) store (digital products: courses and ebooks, mostly Spanish-speaking sellers). It bundles EnsenIA's remote MCP server (`https://ensenia.online/mcp`, OAuth) and skills/commands to launch offers, build high-converting landing pages, produce ad creatives, run A/B tests, scale Meta campaigns with fixed rules and close the day with real numbers. Anything that moves money is proposed as an action the store owner approves. Requires an EnsenIA account; the skills and their output are in Spanish.
+
 ## Instalar
 
 En Claude Code:
