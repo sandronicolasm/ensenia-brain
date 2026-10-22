@@ -5,6 +5,8 @@ description: Auditoría nocturna de una tienda de EnsenIA — compara los númer
 
 # Auditoría nocturna
 
+Si es la tarea programada: `ver_rutina` con `rutina: "auditoria-nocturna"` y seguí esos pasos (se actualizan solos). Arrancá ejecutando lo aprobado y terminá con `registrar_corrida_rutina`. `patrones_de_rechazo` muestra qué propuestas rechaza el dueño y por qué: si un motivo se repite, es una lección.
+
 Corre sin el dueño mirando: no le preguntes nada. Lo que necesite su decisión queda como acción propuesta (`proponer_accion`) o en el resumen final. Si en esta conversación no corrió `brain-arranque`, leé al menos `ver_tienda`, `ver_brief`, `listar_lecciones` y `acciones_pendientes`.
 
 ## 1. Datos (sólo de EnsenIA: no le pidas a Meta en cada pasada)

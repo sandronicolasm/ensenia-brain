@@ -5,7 +5,7 @@ description: Produce y registra creativos para anunciar un producto de EnsenIA e
 
 # Creativos
 
-Si en esta conversación no corrió `brain-arranque`, corrélo primero. Sin brief del producto no hay creativos: armalo antes.
+Si en esta conversación no corrió `brain-arranque`, corrélo primero. Sin brief del producto no hay creativos: armalo antes. `ver_brief` trae `contenidoReal`: un anuncio sólo menciona temas, materiales, cantidades, bonus o fechas que estén ahí; si `bloqueaAnunciar` es true, no se arman anuncios hasta resolverlo.
 
 ## 1. Ángulos antes que piezas
 1. `metodologia` → `angulos_y_voz` (con el `mercado`).
@@ -43,3 +43,9 @@ Con `rendimiento_de_creativos` (al menos 7 días al aire; gasto de Meta contra v
 - Guardalo con `actualizar_creativo` (estado y veredicto en una línea, con los números), con el «sí» del dueño. Si un patrón se repite (por ejemplo, el ángulo de objeción gana siempre en México) y hay n ≥ 30 ventas detrás, registralo como lección (formato en `brain-arranque`).
 
 No pauses ni cambies presupuestos sin el «sí» del dueño. Si tiene el conector oficial de Meta Ads, ejecutalo ahí después de la confirmación.
+
+## Publicar en Meta desde el chat
+Con el conector de Meta Ads conectado y el creativo registrado (y auditado):
+1. `preparar_publicacion_creativo` con el código, el conjunto, los textos (sin promesas de resultado) y el motivo. Valida todo (archivo, logo si la tienda lo pide, conjunto, link a la tienda con los parámetros de URL, nombre con el código) y deja la propuesta.
+2. Con el «sí» del dueño (siempre hace falta), creá el anuncio en Meta con exactamente los datos de `paraMeta`.
+3. `registrar_resultado_accion` con `anuncio_id`: queda vinculado al creativo.
