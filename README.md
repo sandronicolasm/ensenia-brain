@@ -25,7 +25,7 @@ claude mcp add --transport http ensenia https://ensenia.online/mcp --header "Aut
 
 Si ya tenés conectado EnsenIA en claude.ai (Conectores), no hace falta conectarlo dos veces: las skills usan las mismas herramientas.
 
-## Qué trae (v0.11)
+## Qué trae (v0.12)
 
 | Skill | Comando | Para qué |
 |---|---|---|
@@ -42,6 +42,22 @@ Si ya tenés conectado EnsenIA en claude.ai (Conectores), no hace falta conectar
 | `cierre-diario` | `/cierre` | Números del día, alertas con reglas fijas y hasta 3 acciones propuestas. |
 
 El método de marketing (investigación, avatar, oferta, landing, campañas…) vive en el servidor de EnsenIA y se pide con la herramienta `metodologia`: se actualiza sin reinstalar el plugin.
+
+## Cerebro de la tienda (plan Pro)
+
+Una carpeta en tu computadora para todo lo pesado que no conviene subir: transcripciones, clases, frases reales de tus clientes, desarmes de la competencia, borradores y tu diario. Lo destilado (perfil, estado, briefs, lecciones con números, documentos) queda en EnsenIA.
+
+| Comando | Para qué |
+|---|---|
+| `/cerebro` | Arma la carpeta de la tienda o la pone al día. |
+| `/guardar` | Guarda lo nuevo de la sesión, en la carpeta y en EnsenIA. |
+| `/anotar` | Una idea cruda al diario de hoy. |
+| `/aprender` | Lo que salió de la sesión, como lección. |
+| `/destilar` | Material crudo a notas, de a tandas. |
+| `/traer` | Un link, un PDF o un texto de afuera, como nota con su procedencia. |
+| `/ordenar` | Revisa la carpeta y propone orden, sin borrar. |
+
+Funciona en Claude Code y en Claude de escritorio (en la web no se pueden escribir archivos). Las instrucciones viven en EnsenIA (`cerebro_armar`, `cerebro_procedimiento`) y se mejoran sin reinstalar nada.
 
 ## Memoria y aprobación
 
