@@ -9,18 +9,19 @@ Si en esta conversación no corrió `brain-arranque`, corrélo primero. Sin brie
 
 ## 1. Ángulos antes que piezas
 1. `metodologia` → `angulos_y_voz` (con el `mercado`).
-2. Del brief y del registro de creativos (abajo), armá el banco de ángulos: dolor, deseo, objeción, mecanismo, prueba, identidad. Para cada uno, 2 o 3 hooks en el lenguaje literal del mercado.
+2. Del brief y del registro de creativos (abajo), armá el banco de ángulos: dolor, deseo, objeción, mecanismo, prueba, identidad. Para cada uno, 2 o 3 hooks en el lenguaje literal del mercado, anotando el mecanismo de cada gancho (curiosidad, absolución, identidad, demostración, autodiagnóstico, escena, enemigo común). La tanda reparte sus ganchos entre al menos tres mecanismos.
 3. Revisá `listar_lecciones` con `area: creativos` y `rendimiento_de_creativos` (qué ya ganó o perdió). No repitas un ángulo perdedor sin cambiarle algo y decirlo.
-4. Proponé al dueño **3 a 5 ángulos** para esta tanda, con el porqué. Esperá el «sí».
+4. Proponé al dueño **3 a 5 ángulos** para esta tanda, con el porqué, armada como grilla ángulo × formato (cada ángulo en al menos 3 formatos; como referencia, 1 de cada 3 piezas es imagen). Unas 2 de cada 3 piezas iteran o traducen algo que ya vendió y 1 de cada 3 prueba un ángulo nuevo con evidencia. Esperá el «sí».
 
 ## 2. Producir
-- Video: `metodologia` → `guiones_video`. Guion con hook en los primeros 3 segundos, cuerpo y llamado a la acción; formato vertical.
+- Video: `metodologia` → `guiones_video` (seis bloques, revisión antes de producir, lo que se ve es lo que dice la voz). Si se produce con IA: `metodologia` → `produccion_creativos` (una pieza aprobada antes que toda la tanda, saldo dividido por pieza, revisión final cuadro por cuadro).
+- Sin precio, marcas ajenas ni otras redes en ningún cuadro, ni en el texto del anuncio.
 - Imagen: `metodologia` → `anuncios_imagen`. Si el dueño tiene Canva, Figma u otro servicio de imágenes conectado, generalas ahí; si no, entregá el brief visual (texto en imagen, composición, referencias).
 - Las imágenes terminadas se suben con `subir_imagen` (URL pública https) o `link_para_subir_imagen` (archivo local) para tenerlas en la tienda.
 - Prueba social: sólo lo que devuelve `listar_opiniones`. Nada de testimonios ni resultados inventados.
 
 ## 3. Registrar con código
-Cada pieza se registra en la tienda con `registrar_creativo` (formato, ángulo, hook, producto, asset o guion): devuelve su código (`CR-0001`, `CR-0002`…) y el nombre del anuncio, que va así en Meta: `CR-0007 | <ángulo> | <formato>`.
+Cada pieza se registra en la tienda con `registrar_creativo` (formato, ángulo, hook, producto, asset o guion; si es variante o traducción, de qué código sale y qué eje cambió; y la apuesta: qué esperás que pase y por qué, para compararla con el veredicto): devuelve su código (`CR-0001`, `CR-0002`…) y el nombre del anuncio, que va así en Meta: `CR-0007 | <ángulo> | <formato>`.
 
 Con el código al principio del nombre:
 - la sincronización de Meta vincula sola el anuncio al creativo (gasto, impresiones, clics) y lo pasa a «al aire»;
@@ -41,6 +42,10 @@ Con `rendimiento_de_creativos` (al menos 7 días al aire; gasto de Meta contra v
 - **Ganador**: CPA por debajo del objetivo y con ventas suficientes para no ser casualidad.
 - **Perdedor**: gastó 1,5 veces el CPA objetivo sin ventas, o CPA el doble del objetivo con al menos 3 días al aire.
 - Guardalo con `actualizar_creativo` (estado y veredicto en una línea, con los números), con el «sí» del dueño. Si un patrón se repite (por ejemplo, el ángulo de objeción gana siempre en México) y hay n ≥ 30 ventas detrás, registralo como lección (formato en `brain-arranque`).
+
+**Cansancio:** un ganador cuyo costo por venta de 3 días se fue a 1,5 veces el de los 7 anteriores, con frecuencia, CTR o CPM empeorando, está cansado. No se pausa sin un reemplazo que ya venda; el relevo es (1) la publicación original del ganador, (2) un ángulo nuevo con evidencia o un ganador de otro mercado, (3) una iteración con un cambio grande. Otro color u otra música no lo reviven.
+
+Si juzgás piezas antes de publicarlas poniéndote en el lugar del avatar, hacelo a ciegas y tomalo como consejo, nunca como filtro: sin calibrar con ventas cobradas, ese juicio acierta poco.
 
 No pauses ni cambies presupuestos sin el «sí» del dueño. Si tiene el conector oficial de Meta Ads, ejecutalo ahí después de la confirmación.
 

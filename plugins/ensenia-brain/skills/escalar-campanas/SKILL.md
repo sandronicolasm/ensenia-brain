@@ -20,6 +20,13 @@ Si en esta conversación no corrió `brain-arranque`, leé `ver_brief` (CPA obje
 - Los objetivos (CPA y ROAS) salen de `ver_objetivos`; si no hay, son estimados: decilo.
 - Una lección activa del área `campanas` manda: citala.
 
+## 2b. Criterio antes de proponer subir
+- **No abras la canilla con creativos cansados:** si los ganadores que sostienen ese presupuesto están cansados (`metodologia` → `metricas`, «Cansancio de los ganadores»), primero el relevo y después el volumen.
+- Un día suelto no decide: 3 días completos, y nada en las 48 h después de un cambio.
+- La escala se maneja desde arriba (presupuesto o tope de la campaña) o sumando conjuntos con ganadores; adentro no se pausan anuncios ni se edita segmentación o link.
+- Si el ROAS cayó la misma semana en que subió el gasto, proponé volver al gasto donde ganaba.
+- Con tope de costo, subí de a un escalón si no gasta; si después de subirlo el costo por venta pasa el equilibrio, volvé al último tope que funcionó.
+
 ## 3. Proponer
 Por cada «subir» o «bajar», `proponer_accion` con `tipo: ajustar_presupuesto` y payload `{ objeto, id, nombre, presupuesto_actual, presupuesto_nuevo, moneda }` tal cual los trae el candidato, y el motivo con los números de los 3 días. Si queda aprobada (sola o por el dueño), ejecutala con el conector de Meta Ads y registrá el resultado con `registrar_resultado_accion`. Si queda pendiente, decile al dueño que la apruebe en Brain → Por aprobar.
 
