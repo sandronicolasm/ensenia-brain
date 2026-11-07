@@ -25,11 +25,15 @@ Seguí el estado de `iniciar`: te dice qué está hecho, qué sigue y quién lo 
 - `configurar_marca` si la tienda todavía tiene la marca de fábrica.
 
 ### 3. Landing
-Usá la skill `landing-que-convierte`. No publiques la oferta sin `analizar_landing` limpio.
+Usá la skill `landing-que-convierte`. Antes de escribir, sí o sí:
+- **Público objetivo:** la landing se arma para quien va a comprar. Avatar del brief o de `listar_documentos`; si no hay, `metodologia` → `avatar` primero. Contale al dueño a quién le vas a hablar.
+- **Preguntale (de a una, con tu recomendación):** con qué bloques la arma (todo de EnsenIA, mixta —recomendada— o todo HTML, este último desde Impulso), qué extensión le da a cada texto, y si tiene testimonios o chats de WhatsApp reales para replicar en el bloque de testimonios de WhatsApp (con su confirmación de que son verídicos).
+No publiques la oferta sin `analizar_landing` limpio.
 
 ### 4. Ticket promedio
 - **Oferta post-compra** (upsell, downsell, lo que sigue): usá la skill `embudo-post-compra`. Se arma y se guarda desde acá con `guardar_oferta_post_compra`.
-- **Order bump** (el conector todavía no lo edita): en `/admin/products/<id>` → pestaña *Upsells*, elegí qué se ofrece en el checkout de este producto; el diseño general en `/admin/upsell`. Proponé un complemento de **20 a 40 % del precio principal** que acelere el resultado (plantillas, checklist, bonus en video), con 15 a 30 % de descuento. Dale al dueño la configuración exacta y el link, y anotala en el brief.
+- **Order bump:** `ver_order_bump` para ver cómo está; `bumps_del_producto` para elegir qué se ofrece en el checkout de este producto (en orden); `guardar_order_bump` para el descuento, los textos y el diseño (incluida la casilla para sumar todas). Proponé un complemento de **20 a 40 % del precio principal** que acelere el resultado (plantillas, checklist, bonus en video), con 15 a 30 % de descuento, y guardalo con el «sí» del dueño. Anotalo en el brief.
+- **Compraron también, cupones y promociones:** si el conector los tiene (`configurar_compraron_tambien`, `guardar_cupon`, `guardar_promocion`), proponé y guardá con el «sí» del dueño.
 - Los textos en todos los idiomas activos: sección *Idiomas* de cada editor, con «Traducir con IA».
 
 ### 5. Cobro, legales y publicación

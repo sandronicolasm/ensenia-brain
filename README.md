@@ -25,7 +25,7 @@ claude mcp add --transport http ensenia https://ensenia.online/mcp --header "Aut
 
 Si ya tenés conectado EnsenIA en claude.ai (Conectores), no hace falta conectarlo dos veces: las skills usan las mismas herramientas.
 
-## Qué trae (v0.12)
+## Qué trae (v0.13)
 
 | Skill | Comando | Para qué |
 |---|---|---|

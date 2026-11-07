@@ -16,19 +16,26 @@ Si en esta conversación no corrió `brain-arranque`, corrélo primero.
 6. Si ya existe: `ver_landing` (y `analizar_landing`) para conservar ids y saber qué falla.
 7. Lecciones del área `landing`: aplicalas y decí cuáles usaste.
 
-## 2. Proponer antes de escribir
+## 2. Decidir con el dueño (antes del esqueleto)
+1. **A quién le hablás:** resumí el avatar en 3 líneas (quién es, qué le duele, qué ya probó, nivel de conciencia) y esperá su OK. Sin avatar no hay landing: armalo con `metodologia` → `avatar`.
+2. **Bloques:** todo con bloques de EnsenIA, mixta (recomendada: EnsenIA + 2 a 4 HTML de diseño) o todo HTML (desde Impulso; se edita con la IA, no desde los campos del panel).
+3. **Extensión de los textos:** proponé una por sección según el nivel de conciencia y preguntá si la quiere más corta o más larga; respetala en todos los bloques.
+4. **Testimonios:** opiniones de la tienda, o chats reales de WhatsApp para el bloque de testimonios de WhatsApp (textuales, con su confirmación de que son verídicos: `testimonios_reales` al guardar).
+Guardá lo elegido (`actualizar_estado` o el brief) para no volver a preguntarlo.
+
+## 3. Proponer antes de escribir
 Mostrale al dueño el esqueleto: orden de bloques, titular (2 o 3 opciones con su ángulo), la promesa, la oferta (qué incluye y bonus) y qué prueba social hay. Esperá el «sí».
 
 Orden que convierte: hero → problema → antes y después → beneficios → qué incluye → para quién es → testimonios (sólo si hay reales) → oferta con medios de pago y confianza → garantía → FAQ → cierre.
 
-## 3. Escribir
+## 4. Escribir
 - Frases del mercado tal cual aparecen en el brief; nada de jerga de agencia.
 - Precios **sólo** con `{{precio}}`, `{{precio_lista}}`, `{{precio_antes}}`, `{{precio_pack}}`, `{{moneda}}`, `{{descuento}}`, `{{ahorro}}`. Nunca un monto escrito a mano.
 - Botones de compra: en bloques nativos alcanza con el texto; en el HTML, `#comprar` (o `#comprar-simple` / `#comprar-pack`).
 - Sin links para pagar fuera de EnsenIA.
-- Sin testimonios, cifras ni calificaciones inventadas. Si no hay prueba social, se usa garantía, demostración del contenido y especificidad.
+- Sin testimonios, cifras ni calificaciones inventadas. Chats de WhatsApp sólo si son reales y el dueño lo confirma (`testimonios_reales`). Si no hay prueba social, se usa garantía, demostración del contenido y especificidad.
 
-## 4. Guardar y auditar
+## 5. Guardar y auditar
 1. `guardar_landing` (con `idioma` si no es el de la tienda). Queda la versión anterior en el historial.
 2. `analizar_landing` → corregí todo lo que marque (con `editar_bloques_landing` para cambios puntuales) hasta que salga limpia.
 3. Pasale al dueño la URL para que la mire en el celular.
