@@ -25,7 +25,7 @@ claude mcp add --transport http ensenia https://ensenia.online/mcp --header "Aut
 
 Si ya tenés conectado EnsenIA en claude.ai (Conectores), no hace falta conectarlo dos veces: las skills usan las mismas herramientas.
 
-## Qué trae (v0.14)
+## Qué trae (v0.15)
 
 | Skill | Comando | Para qué |
 |---|---|---|
@@ -40,6 +40,7 @@ Si ya tenés conectado EnsenIA en claude.ai (Conectores), no hace falta conectar
 | `quiz-de-venta` | `/quiz` | Landing en formato quiz: preguntas que terminan en el resultado con el producto, embudo pregunta por pregunta y página contra quiz. |
 | `test-ab` | `/testab` | Test A/B de una landing: un cambio por vez, reparto, resultado con la significancia que calcula EnsenIA y cierre con la ganadora. |
 | `cierre-diario` | `/cierre` | Números del día, alertas con reglas fijas y hasta 3 acciones propuestas. |
+| `redes-desde-cero` | `/redes` | Arma en tu Chrome (con Claude in Chrome) la página de Facebook, Instagram, las cuentas publicitarias, el píxel y TikTok, con ícono, portada, biografías y los primeros posts. Vos sólo iniciás sesión, ponés códigos y la tarjeta. |
 
 El método de marketing (investigación, avatar, oferta, landing, campañas…) vive en el servidor de EnsenIA y se pide con la herramienta `metodologia`: se actualiza sin reinstalar el plugin.
 
