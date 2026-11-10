@@ -17,6 +17,8 @@ claude plugin install ensenia-brain@ensenia
 
 El plugin trae el conector de EnsenIA (`https://ensenia.online/mcp`). La primera vez te pide entrar a tu cuenta y elegir la tienda (OAuth). Marcá los tres permisos —leer, modificar páginas y configurar— para que el Brain pueda hacer todo el recorrido.
 
+Todo lo que el Brain puede hacer, con pedidos listos para copiar: [manual de la tienda](https://claude.ai/artifact/Q1PjFXB9mqoVtWMmvdLeXQ).
+
 ¿Preferís un token personal? En tu panel: Configuración → Conector de IA → Token personal, y:
 
 ```bash
