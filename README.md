@@ -25,7 +25,7 @@ claude mcp add --transport http ensenia https://ensenia.online/mcp --header "Aut
 
 Si ya tenés conectado EnsenIA en claude.ai (Conectores), no hace falta conectarlo dos veces: las skills usan las mismas herramientas.
 
-## Qué trae (v0.15)
+## Qué trae (v0.16)
 
 | Skill | Comando | Para qué |
 |---|---|---|
@@ -34,7 +34,7 @@ Si ya tenés conectado EnsenIA en claude.ai (Conectores), no hace falta conectar
 | `landing-que-convierte` | `/landing` | Landing por bloques desde el brief, auditada, en cualquier idioma activo. |
 | `creativos` | `/creativos` (la skill misma) | Ángulos, guiones, anuncios de imagen, códigos `CR-0001` y veredicto de ganadores. |
 | `embudo-post-compra` | `/embudo` | Upsell, downsell y lo que sigue después de pagar: arma el flujo, lo guarda en la tienda y mide la tasa de cada paso. |
-| `replicar-mercado` | `/replicar` | Lleva una oferta validada a otro país o idioma: crea el mercado, traduce la tienda por bloques, completa el checklist y la sale a testear con métricas separadas (plan Pro). |
+| `replicar-mercado` | `/replicar` | Lleva una oferta validada a otro país o idiomas: crea el mercado con el buscador de países (uno o varios idiomas), traduce la tienda por bloques idioma por idioma, carga la entrega traducida, completa el checklist y la sale a testear con métricas separadas (plan Pro). |
 | `auditoria-nocturna` | `/auditoria` | Compara la semana con la memoria, da veredicto a los creativos, registra y poda lecciones y deja acciones para aprobar. |
 | `escalar-campanas` | `/escalar` | Escalar, sostener o recortar campañas con reglas fijas sobre ROAS y CPA reales; cada cambio de presupuesto, como acción. |
 | `quiz-de-venta` | `/quiz` | Landing en formato quiz: preguntas que terminan en el resultado con el producto, embudo pregunta por pregunta y página contra quiz. |
