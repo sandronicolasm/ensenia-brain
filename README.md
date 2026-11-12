@@ -27,7 +27,7 @@ claude mcp add --transport http ensenia https://ensenia.online/mcp --header "Aut
 
 Si ya tenés conectado EnsenIA en claude.ai (Conectores), no hace falta conectarlo dos veces: las skills usan las mismas herramientas.
 
-## Qué trae (v0.16)
+## Qué trae (v0.17)
 
 | Skill | Comando | Para qué |
 |---|---|---|
@@ -61,6 +61,11 @@ Una carpeta en tu computadora para todo lo pesado que no conviene subir: transcr
 | `/ordenar` | Revisa la carpeta y propone orden, sin borrar. |
 
 Funciona en Claude Code y en Claude de escritorio (en la web no se pueden escribir archivos). Las instrucciones viven en EnsenIA (`cerebro_armar`, `cerebro_procedimiento`) y se mejoran sin reinstalar nada.
+
+**La primera vez** que abrís la carpeta, Claude te pide aceptar tres cosas, y quedan anotadas en `.acuerdos`:
+- **Sugerencias:** te avisa cuándo conviene `/guardar`, `/aprender`, `/ordenar` o `/destilar`, de a una y con el motivo.
+- **Varios chats a la vez:** relee lo que tocó otro chat antes de escribir, hace commits por archivo y guarda de a un chat por vez.
+- **Radar de chats:** cada chat ve en qué andan los otros chats de Claude Code abiertos en tu computadora (último pedido y archivos que escribieron) y frena antes de pisar un archivo que otro acaba de tocar. Lo traen los hooks del plugin (`hooks/hooks.json`, `scripts/radar.py`): sólo actúa dentro de la carpeta del cerebro y si lo aceptaste. Lee los registros que Claude Code ya guarda en `~/.claude`, y no sale nada de tu computadora. Necesita Python 3 y no ve los chats de claude.ai en el navegador ni en el celular.
 
 ## Memoria y aprobación
 

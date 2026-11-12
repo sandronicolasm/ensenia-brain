@@ -1,0 +1,27 @@
+{
+  "description": "Radar de chats del cerebro de EnsenIA: cada chat ve en qué andan los otros abiertos en esta computadora y no pisa un archivo que otro acaba de escribir. Sólo actúa en la carpeta del cerebro y si el dueño lo aceptó (.acuerdos).",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          { "type": "command", "command": "sh \"${CLAUDE_PLUGIN_ROOT}/scripts/radar.sh\" hook", "timeout": 20 }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          { "type": "command", "command": "sh \"${CLAUDE_PLUGIN_ROOT}/scripts/radar.sh\" hook", "timeout": 15 }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write|NotebookEdit|MultiEdit",
+        "hooks": [
+          { "type": "command", "command": "sh \"${CLAUDE_PLUGIN_ROOT}/scripts/radar.sh\" guardian", "timeout": 15 }
+        ]
+      }
+    ]
+  }
+}
