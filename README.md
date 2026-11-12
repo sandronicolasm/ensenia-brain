@@ -27,7 +27,7 @@ claude mcp add --transport http ensenia https://ensenia.online/mcp --header "Aut
 
 Si ya tenés conectado EnsenIA en claude.ai (Conectores), no hace falta conectarlo dos veces: las skills usan las mismas herramientas.
 
-## Qué trae (v0.17)
+## Qué trae (v0.18)
 
 | Skill | Comando | Para qué |
 |---|---|---|
@@ -43,6 +43,22 @@ Si ya tenés conectado EnsenIA en claude.ai (Conectores), no hace falta conectar
 | `test-ab` | `/testab` | Test A/B de una landing: un cambio por vez, reparto, resultado con la significancia que calcula EnsenIA y cierre con la ganadora. |
 | `cierre-diario` | `/cierre` | Números del día, alertas con reglas fijas y hasta 3 acciones propuestas. |
 | `redes-desde-cero` | `/redes` | Arma en tu Chrome (con Claude in Chrome) la página de Facebook, Instagram, las cuentas publicitarias, el píxel y TikTok, con ícono, portada, biografías y los primeros posts. Vos sólo iniciás sesión, ponés códigos y la tarjeta. |
+| `dominio-propio` | `/dominio` | Elige un dominio corto y libre, te muestra el precio de alta y de renovación, lo compra en tu cuenta de Hostinger sólo con tu «sí», lo conecta a la tienda con y sin www, carga el DNS y lo sigue hasta que abre. Si lo tenés en otro registrador, te da los registros. Desde el plan Impulso. |
+
+### Dominio con Hostinger
+
+Para que tu Claude compre y configure el dominio, conectá también el MCP oficial de Hostinger (EnsenIA no guarda tu acceso ni compra nada por su cuenta):
+
+- claude.ai: Configuración → Conectores → agregar con la URL `https://mcp.hostinger.com` (entrás con tu cuenta de Hostinger).
+- Claude Code:
+
+  ```bash
+  claude mcp add --transport http hostinger https://mcp.hostinger.com
+  ```
+
+- O el servidor local de Hostinger con un token de hPanel → API (`HOSTINGER_API_TOKEN`), que queda en tu computadora.
+
+Después pedí `/dominio` o «quiero mi dominio». Sin el conector también anda: comprás vos con el link y tu IA te da los registros para cargar.
 
 El método de marketing (investigación, avatar, oferta, landing, campañas…) vive en el servidor de EnsenIA y se pide con la herramienta `metodologia`: se actualiza sin reinstalar el plugin.
 
