@@ -32,7 +32,7 @@ Objetivo: que la tienda abra en su dominio (`mimarca.com` y `www.mimarca.com`) c
 2. Cotizá desde el catálogo de Hostinger, revisá WHOIS y medio de pago, pedí el «sí» y comprá.
 3. `conectar_dominio` con el dominio raíz.
 4. Seguí `hostinger.pasos` de la respuesta: zona actual, **primero limpiar** lo que choca (todo dominio nuevo trae un A de estacionamiento en `@`), después validar y aplicar. Validar no ve los choques con lo que ya hay: aplicar los rechaza («ALIAS must not be used with A»). El conector no puede borrar registros sueltos: esa limpieza va en el Chrome de trabajo con `hostinger.plan.limpiar.enChrome`. Si Hostinger rechaza el tipo ALIAS en `@`, `hostinger.planB` (www principal y la raíz redirigida).
-5. `estado_del_dominio` hasta `activo`; confirmá abriendo la tienda en el dominio y con `verificar_dominios` que ya figura registrado.
+5. `estado_del_dominio` hasta `activo` (cada consulta con el dominio pendiente le pide a Cloudflare que lo revise de nuevo). Con ALIAS en `@`, Cloudflare no ve un CNAME: hace falta el TXT `_cf-custom-hostname`, que viene en los registros de la estrategia raíz. Si con ese TXT sigue pendiente un par de horas, plan B con el «sí» del dueño; confirmá abriendo la tienda en el dominio y con `verificar_dominios` que ya figura registrado.
 6. Qué sigue: verificar el dominio en Meta (`presencia_estado` / `presencia_guardar`) y, si aplica, los mails con su dominio.
 
 ## Chrome de trabajo
