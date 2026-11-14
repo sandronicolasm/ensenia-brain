@@ -51,6 +51,6 @@ No pauses ni cambies presupuestos sin el «sí» del dueño. Si tiene el conecto
 
 ## Publicar en Meta desde el chat
 Con el conector de Meta Ads conectado y el creativo registrado (y auditado):
-1. `preparar_publicacion_creativo` con el código, el conjunto, los textos (sin promesas de resultado) y el motivo. Valida todo (archivo, logo si la tienda lo pide, conjunto, link a la tienda con los parámetros de URL, nombre con el código) y deja la propuesta.
-2. Con el «sí» del dueño (siempre hace falta), creá el anuncio en Meta con exactamente los datos de `paraMeta`.
+1. `preparar_publicacion_creativo` con el código, el conjunto, los textos (sin promesas de resultado) y el motivo. Valida todo (archivo, logo si la tienda lo pide, conjunto, link a la tienda con los parámetros de URL, nombre con el código) y deja la propuesta. El anuncio sale con la página de Facebook y el Instagram de la tienda, y ese Instagram es también el anunciante en Threads. Si la tienda todavía no los tiene, buscalos con `ads_get_user_pages` y `ads_get_ig_accounts` y pasalos en `pagina_id` e `instagram_id`: quedan como los de la tienda.
+2. Con el «sí» del dueño (siempre hace falta), creá el anuncio en Meta con exactamente los datos de `paraMeta`: `page_id` e `instagram_user_id` siempre explícitos en el creativo (no dejes que el conector elija otra cuenta) y Threads dentro de las ubicaciones.
 3. `registrar_resultado_accion` con `anuncio_id`: queda vinculado al creativo.
